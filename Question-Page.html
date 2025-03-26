@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بانک سوال | مزداهیک</title>
+    <link rel="stylesheet" href="./bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" type="image/png" href="./imgs/icon-kharazmi.png">
+</head>
+<body>
+    <div class="row px-2 py-2 navbar">
+        <div class="col-md-10 d-none d-md-block container">
+            <ul class="list-unstyled d-flex align-items-center m-0">
+                <li><a class="navbar-brand p-2 d-block" href="HomePage.html">صفحه اصلی</a></li>
+                <li><a class="navbar-brand p-2 d-block active" href="./Question-Page.html">بانک سوال</a></li>
+                <li><a class="navbar-brand p-2 d-block" href="./Calculator-Page.html">ماشین حساب</a></li>
+                <li><a class="navbar-brand p-2 d-block" href="./DarsyarPage.html">درس یار</a></li>
+                <div class="dropdown">
+                    <li><a class="navbar-brand p-2 d-block dropdownMenuButton" href="./BlogsPage.html">
+                        <span>مقاله ها</span>
+                        <span><i class="bi bi-caret-down-fill nav-down-icon"></i></span>
+                    </a></li>
+                    <div class="dropdown-menu">
+                        <a class="d-block my-2 mx-3 navbar-brand" href="./blogs-html/blog-math.html">تاریخ ریاضیات</a>
+                        <a class="d-block my-2 mx-3 navbar-brand" href="./blogs-html/Mathematician.html">ریاضیدانان بزرگ ایرانی</a>
+                        <a class="d-block my-2 mx-3 navbar-brand" href="./blogs-html/Tavan-Page.html">توان در ریاضیات</a>
+                        <a class="d-block my-2 mx-3 navbar-brand" href="./blogs-html/Pythagoras-Page.html">رابطه فیثاغورس</a>
+                        <a class="d-block my-2 mx-3 navbar-brand" href="./blogs-html/Kharazmi.html">مسابقات خوارزمی</a>
+                    </div>
+                </div>
+                <li><a class="navbar-brand p-2 d-block" href="./Test-Page.html">تست</a></li>
+                <li><a class="navbar-brand p-2 d-block" href="./AboutPage.html">درباره من</a></li>
+            </ul>
+        </div>
+
+        <div class="col-6 d-md-none d-flex">
+            <i class="bi bi-list icontextnavbar" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></i>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel ">منوی کاربر</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="list-unstyled">
+                    <li><a class="navbar-brand d-block TextDark" href="HomePage.html"><i class="bi fs-5 bi-house-fill"></i>صفحه اصلی</a></li>
+                    <li class="active-bg-navbar"><a class="navbar-brand d-block TextDark" href="./Question-Page.html">بانک سوال</a></li>
+                    <li><a class="navbar-brand d-block TextDark" href="Calculator-Page.html">ماشین حساب</a></li>
+                    <li><a class="navbar-brand d-block TextDark" href="./DarsyarPage.html">درس یار</a></li>
+                    <li><a class="navbar-brand d-block TextDark" href="./BlogsPage.html">مقاله ها</a></li>
+                    <li><a class="navbar-brand d-block TextDark" href="Test-Page.html">تست</a></li>
+                    <li><a class="navbar-brand d-block TextDark" href="./AboutPage.html">درباره من</a></li>
+                </ul>
+              </div>
+            </div>
+        </div>
+        <div class="col-6 col-md-2 d-flex justify-content-center">
+            <img class="logo" src="./imgs/icon-kharazmi.png" alt="">
+        </div>
+
+    </div> 
+
+    <div class="container">
+        <div class="row box-question-bank">
+            <div class="d-flex align-items-center mt-4">
+                <div class="headline-logo">
+                    <i class="bi bi-question-lg fs-3 d-flex"></i>
+                </div>
+                <h3 class="font-bold headline-m">بانک سوال</h3>
+            </div>
+            <div class="col-12 col-md-6">
+                <img width="100%" src="./imgs/line.svg" alt="">
+                <p class="justify-text">
+                    تو این قسمت از سایت، ما سوالات مختلفی رو برای هر فصل براتون گذاشتیم تا بتونید با سوالات متنوع تمرین کنید. از سوالات ساده که به راحتی می‌تونید حلشون کنید گرفته تا سوالات چالش‌برانگیزتر و حتی سوالاتی که شبیه به آزمون‌های بین‌المللی هستند.
+                    برای هر فصل سه نوع سوال داریم: یک سوال راحت برای شروع، یه سوال سخت‌تر که می‌تونه شما رو به چالش بکشه، و یک سوال تیمز که مثل سوالات بین‌المللی طراحی شده.
+                    امیدواریم این سوالات به شما کمک کنه که یادگیری‌تون رو بهتر و جذاب‌تر کنید. همیشه یادتون باشه که با تمرین و پشتکار می‌تونید به هر چیزی برسید!
+                </p>
+            </div>
+            <div class="col-12 col-md-6 mt-3">
+
+                <div class="dropdown mb-3">
+                    <a class="navbar-brand p-2 d-block dropdownQuestinoButton text-center" onclick="toggleDropdown()">
+                        <span id="selected-filter">انتخاب سطح</span>
+                        <span><i class="bi bi-caret-down-fill q-down-icon"></i></span>
+                    </a>
+                    <div class="dropdown-Questino w-100 text-center mt-2 p-1">
+                        <p class="px-2 py-1" onclick="filterQuestions('all')">همه سطوح</p>
+                        <p class="px-2 py-1" onclick="filterQuestions('easy')">آسان</p>
+                        <p class="px-2 py-1" onclick="filterQuestions('hard')">سخت</p>
+                        <p class="px-2 py-1" onclick="filterQuestions('timss')">تیمز</p>
+                    </div>
+                </div>
+
+
+                <div class="box-question-timz easy">
+                    <p onclick="toggleAnswer(this)">1. حاصل (-4) + (+2) چیست؟ <i class="bi bi-caret-down-fill"></i></p>
+                    <p class="answer-timz">جواب: -2</p>
+                </div>  
+                <div class="box-question-timz hard">
+                    <p onclick="toggleAnswer(this)">1. عدد گویا 5/6 را از عدد گویا -7/8 کم کنید.<i class="bi bi-caret-down-fill"></i></p>
+                    <p class="answer-timz">جواب:  -43/48</p>
+                </div>
+                <div class="box-question-timz timss">
+                    <p onclick="toggleAnswer(this)">1. عدد گویا 3.75 را به صورت کسر نوشته و با عدد صحیح -2 جمع کنید.<i class="bi bi-caret-down-fill"></i></p>
+                    <p class="answer-timz">جواب: -5/4 یا -1.25</p>
+                </div>
+                
+
+                <div class="box-question-timz easy">
+                    <p onclick="toggleAnswer(this)">2. کدام یک از این اعداد عدد اول است؟ 11 یا 14؟ <i class="bi bi-caret-down-fill"></i></p>
+                    <p class="answer-timz">جواب: 11 عدد اول است.</p>
+                </div>        
+                <div class="box-question-timz hard">
+                    <p onclick="toggleAnswer(this)">2. عدد 97 یک عدد اول است یا خیر؟ اگر بله، چرا؟ <i class="bi bi-caret-down-fill"></i></p>
+                    <p class="answer-timz">جواب: بله، عدد 97 عدد اول است چون فقط بر 1 و خود 97 بخش‌پذیر است.</p>
+                </div>
+                <div class="box-question-timz timss">
+                    <p onclick="toggleAnswer(this)">2. اگر مجموع دو عدد اول 24 باشد، این دو عدد چه اعدادی هستند؟ <i class="bi bi-caret-down-fill"></i></p>
+                    <p class="answer-timz">جواب: 11 و 13.</p>
+                </div>
+                
+                <div class="box-question-timz easy">
+                    <p onclick="toggleAnswer(this)">3. چه نامی به یک چند ضلعی با 5 ضلع می‌دهیم؟ <i class="bi bi-caret-down-fill"></i></p>
+                    <p class="answer-timz">جواب: پنج ضلعی.</p>
+                </div>                
+                <div class="box-question-timz hard">
+                    <p onclick="toggleAnswer(this)">3. مساحت یک مثلث با قاعده 8 سانتی‌متر و ارتفاع 6 سانتی‌متر را محاسبه کنید.<i class="bi bi-caret-down-fill"></i></p>
+                    <p class="answer-timz">جواب: مساحت = 1/2 × 8 × 6 = 24 سانتی‌متر مربع.</p>
+                </div>                           
+                <div class="box-question-timz timss">
+                    <p onclick="toggleAnswer(this)">3. آیا چهارضلعی با زوایای داخلی 90، 110، 95 و 85 درجه، متوازی‌الاضلاع است؟ <i class="bi bi-caret-down-fill"></i></p>
+                    <p class="answer-timz">جواب: خیر، این چهارضلعی متوازی‌الاضلاع نیست چون مجموع زاویه‌های مخالف در یک متوازی‌الاضلاع باید برابر باشد.</p>
+                </div>
+
+                <div class="box-question-timz easy">
+                    <p onclick="toggleAnswer(this)">4. حل معادله x + 5 = 12، مقدار x را پیدا کنید. <i class="bi bi-caret-down-fill"></i></p>
+                    <p class="answer-timz">جواب: x = 7</p>
+                </div>
+                <div class="box-question-timz hard">
+                    <p onclick="toggleAnswer(this)">4. حل معادله 3x - 7 = 2x + 5، مقدار x را پیدا کنید. <i class="bi bi-caret-down-fill"></i></p>
+                    <p class="answer-timz">جواب: x = 12</p>
+                </div>
+                <div class="box-question-timz timss">
+                    <p onclick="toggleAnswer(this)">4. حل معادله 2(x - 3) = 4، مقدار x را پیدا کنید. <i class="bi bi-caret-down-fill"></i></p>
+                    <p class="answer-timz">جواب: x = 5</p>
+                </div>
+                
+                
+                <div class="box-question-timz easy">
+                    <p onclick="toggleAnswer(this)">5. مختصات نقطه A را که در آن x = 3 و y = 4 است، پیدا کنید. <i class="bi bi-caret-down-fill"></i></p>
+                    <p class="answer-timz">جواب: نقطه A در موقعیت (3، 4) در صفحه مختصات قرار دارد.</p>
+                </div>                
+                <div class="box-question-timz hard">
+                    <p onclick="toggleAnswer(this)">5. طول بردار AB را حساب کنید، که نقاط A(2، 3) و B(5، 7) را به هم وصل می‌کند. <i class="bi bi-caret-down-fill"></i></p>
+                    <p class="answer-timz">جواب: طول بردار AB برابر است با 5.</p>
+                </div>               
+                <div class="box-question-timz timss">
+                    <p onclick="toggleAnswer(this)">5. زاویه‌ای که بردار AB با محور x می‌سازد، چقدر است؟ <i class="bi bi-caret-down-fill"></i></p>
+                    <p class="answer-timz">جواب: زاویه حدوداً 53.13 درجه است.</p>
+                </div>
+
+                <div class="box-question-timz easy">
+                    <p onclick="toggleAnswer(this)">6. مثلثی با اضلاع 3، 4 و 5 رسم کنید و بگویید قائم‌الزاویه است یا نه. <i class="bi bi-caret-down-fill"></i></p>
+                    <p class="answer-timz">جواب: این مثلث قائم‌الزاویه است چون مربع طول بزرگترین ضلع برابر با مجموع مربع دو ضلع دیگر است.</p>
+                </div>                
+                <div class="box-question-timz hard">
+                    <p onclick="toggleAnswer(this)">6. مساحت مثلثی که قاعده آن 6 سانتی‌متر و ارتفاع آن 8 سانتی‌متر است را محاسبه کنید. <i class="bi bi-caret-down-fill"></i></p>
+                    <p class="answer-timz">جواب: مساحت برابر با 24 سانتی‌متر مربع است.</p>
+                </div>                
+                <div class="box-question-timz timss">
+                    <p onclick="toggleAnswer(this)">6. یک مثلث متساوی‌الاضلاع با طول ضلع 15 سانتی‌متر داریم. ارتفاع این مثلث را محاسبه کنید. <i class="bi bi-caret-down-fill"></i></p>
+                    <p class="answer-timz">جواب: ارتفاع مثلث برابر با 12.99 سانتی‌متر است.</p>
+                </div>
+                
+                <div class="box-question-timz easy">
+                    <p onclick="toggleAnswer(this)">7. عدد 5 را به توان 2 برسانید. <i class="bi bi-caret-down-fill"></i></p>
+                    <p class="answer-timz">جواب: 25</p>
+                </div>
+                <div class="box-question-timz hard">
+                    <p onclick="toggleAnswer(this)">7. جذر عدد 625 را محاسبه کنید و نتیجه را با 25 ضرب کنید. <i class="bi bi-caret-down-fill"></i></p>
+                    <p class="answer-timz">جواب: 125</p>
+                </div> 
+                <div class="box-question-timz timss">
+                    <p onclick="toggleAnswer(this)">7. اگر 3 به توان n برابر با 81 باشد، مقدار n را پیدا کنید. <i class="bi bi-caret-down-fill"></i></p>
+                    <p class="answer-timz">جواب: n برابر با 4 است چون 3 به توان 4 برابر با 81 می‌شود.</p>
+                </div>
+
+                <div class="box-question-timz easy">
+                    <p onclick="toggleAnswer(this)">8. میانگین اعداد 4، 7، 9، 12 و 15 را محاسبه کنید. <i class="bi bi-caret-down-fill"></i></p>
+                    <p class="answer-timz">جواب: میانگین برابر با 9.4 است.</p>
+                </div>                
+                <div class="box-question-timz hard">
+                    <p onclick="toggleAnswer(this)">8. احتمال انتخاب یک عدد فرد از بین اعداد 1 تا 10 چیست؟ <i class="bi bi-caret-down-fill"></i></p>
+                    <p class="answer-timz">جواب: احتمال برابر با 5 از 10 یا 1 به 2 است.</p>
+                </div>                
+                <div class="box-question-timz timss">
+                    <p onclick="toggleAnswer(this)">8. در کیسه‌ای 4 توپ قرمز، 3 توپ آبی و 5 توپ سبز داریم. احتمال انتخاب توپ قرمز چیست؟ <i class="bi bi-caret-down-fill"></i></p>
+                    <p class="answer-timz">جواب: احتمال برابر با 4 از 12 یا 1 به 3 است.</p>
+                </div>
+                
+                <div class="box-question-timz easy">
+                    <p onclick="toggleAnswer(this)">9. مساحت یک دایره با شعاع 7 سانتی‌متر را حساب کنید. <i class="bi bi-caret-down-fill"></i></p>
+                    <p class="answer-timz">جواب: مساحت برابر با 153.94 سانتی‌متر مربع است.</p>
+                </div>               
+                <div class="box-question-timz hard">
+                    <p onclick="toggleAnswer(this)">9. طول کمان دایره‌ای با زاویه 60 درجه و شعاع 10 سانتی‌متر را پیدا کنید. <i class="bi bi-caret-down-fill"></i></p>
+                    <p class="answer-timz">جواب: طول کمان برابر با 10.47 سانتی‌متر است.</p>
+                </div>
+                <div class="box-question-timz timss">
+                    <p onclick="toggleAnswer(this)">9. شعاع یک دایره 5 سانتی‌متر است. مساحت و محیط این دایره را محاسبه کنید. <i class="bi bi-caret-down-fill"></i></p>
+                    <p class="answer-timz">جواب: مساحت برابر با 78.54 سانتی‌متر مربع و محیط برابر با 31.42 سانتی‌متر است.</p>
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="footer row flex-row-reverse m-0">
+        <div class="page-footer col-12 col-md-3 col-lg-2 px-4">
+            <ul class="list-unstyled">
+                <li class="text-gray">صفحات</li>
+                <li><a href="./DarsyarPage.html">درس‌یار</a></li>
+                <li><a href="./Question-Page.html">بانک سوال</a></li>
+                <li><a href="./HomePage.html">صفحه اصلی</a></li>
+            </ul>
+        </div>
+        <div class="about-footer col-12 col-md-3 col-lg-3 px-4">
+            <ul class="list-unstyled">
+                <li class="text-gray">نشانی</li>
+                <li>مدرسه حضرت فاطمه</li>
+                <li>تماس:09134610630</li>
+                <li>ایدی شاد :@iSaba2011</li>
+                <li>ایمیل:sabakalantari2013@gmail.com</li>
+            </ul>
+        </div>
+        <div class="text-footer col-12 col-md-4 col-lg-5">
+            <ul class="list-unstyled">
+                <li class="text-gray justify-text">
+                    در مزداهیک تلاش می‌کنیم تا شما را در یادگیری ریاضی پایه هشتم همراهی کنیم. با استفاده از ابزارهای کاربردی، مقالات آموزنده و آزمون‌های آنلاین، می‌توانید مسائل ریاضی را به راحتی حل کنید و با مفاهیم پیچیده آشنا شوید. همچنین با مطالعه مقالات، به تاریخچه ریاضیات و دستاوردهای بزرگ‌ترین ریاضیدانان دنیا پی خواهید برد.
+                    هدف ما ایجاد محیطی جذاب و حمایتی است که به شما کمک کند مهارت‌های ریاضی خود را تقویت کنید. با ابزارهای مدرن و منابع آموزشی متنوع، مسیر یادگیری شما سریع‌تر و راحت‌تر خواهد شد.      
+                </li>
+            </ul>
+        </div>
+        <div class="logo-footer col-12 col-md-2 col-lg-2 d-flex justify-content-center">
+            <img width="150px" height="150" src="./imgs/icon-kharazmi.png" alt="">
+        </div>
+    </div>
+
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/java.js"></script>
+    <script src="./bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script>   
+</body>

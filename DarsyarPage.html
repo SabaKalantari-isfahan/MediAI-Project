@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>درس یار | مزداهیک</title>
+    <link rel="stylesheet" href="./bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" type="image/png" href="./imgs/icon-kharazmi.png">
+</head>
+<body>
+
+    <div class="row px-2 py-2 navbar">
+        <div class="col-md-10 d-none d-md-block container">
+            <ul class="list-unstyled d-flex align-items-center m-0">
+                <li><a class="navbar-brand p-2 d-block" href="HomePage.html">صفحه اصلی</a></li>
+                <li><a class="navbar-brand p-2 d-block" href="./Question-Page.html">بانک سوال</a></li>
+                <li><a class="navbar-brand p-2 d-block" href="./Calculator-Page.html">ماشین حساب</a></li>
+                <li><a class="navbar-brand p-2 d-block active" href="./DarsyarPage.html">درس یار</a></li>
+                <div class="dropdown">
+                    <li><a class="navbar-brand p-2 d-block dropdownMenuButton" href="./BlogsPage.html">
+                        <span>مقاله ها</span>
+                        <span><i class="bi bi-caret-down-fill nav-down-icon"></i></span>
+                    </a></li>
+                    <div class="dropdown-menu">
+                        <a class="d-block my-2 mx-3 navbar-brand" href="./blogs-html/blog-math.html">تاریخ ریاضیات</a>
+                        <a class="d-block my-2 mx-3 navbar-brand" href="./blogs-html/Mathematician.html">ریاضیدانان بزرگ ایرانی</a>
+                        <a class="d-block my-2 mx-3 navbar-brand" href="./blogs-html/Tavan-Page.html">توان در ریاضیات</a>
+                        <a class="d-block my-2 mx-3 navbar-brand" href="./blogs-html/Pythagoras-Page.html">رابطه فیثاغورس</a>
+                        <a class="d-block my-2 mx-3 navbar-brand" href="./blogs-html/Kharazmi.html">مسابقات خوارزمی</a>
+                    </div>
+                </div>
+                <li><a class="navbar-brand p-2 d-block" href="./Test-Page.html">تست</a></li>
+                <li><a class="navbar-brand p-2 d-block" href="./AboutPage.html">درباره من</a></li>
+            </ul>
+        </div>
+
+        <div class="col-6 d-md-none d-flex">
+            <i class="bi bi-list icontextnavbar" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></i>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel ">منوی کاربر</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="list-unstyled">
+                    <li><a class="navbar-brand d-block TextDark" href="HomePage.html"><i class="bi fs-5 bi-house-fill"></i>صفحه اصلی</a></li>
+                    <li><a class="navbar-brand d-block TextDark" href="./Question-Page.html">بانک سوال</a></li>
+                    <li><a class="navbar-brand d-block TextDark" href="Calculator-Page.html">ماشین حساب</a></li>
+                    <li class="active-bg-navbar"><a class="navbar-brand d-block TextDark" href="./DarsyarPage.html">درس یار</a></li>
+                    <li><a class="navbar-brand d-block TextDark" href="./BlogsPage.html">مقاله ها</a></li>
+                    <li><a class="navbar-brand d-block TextDark" href="Test-Page.html">تست</a></li>
+                    <li><a class="navbar-brand d-block TextDark" href="./AboutPage.html">درباره من</a></li>
+                </ul>
+              </div>
+            </div>
+        </div>
+        <div class="col-6 col-md-2 d-flex justify-content-center">
+            <img class="logo" src="./imgs/icon-kharazmi.png" alt="">
+        </div>
+
+    </div> 
+
+    <div class="container">
+        <div class="row mt-4">
+            <div class="col-12 col-md-6 text-end">
+                <div class="d-flex align-items-center">
+                    <div class="headline-logo">
+                        <i class="bi bi-lightbulb-fill fs-3 d-flex "></i>
+                    </div>
+                    <h3 class="headline-m font-bold">درس یار</h3>
+                </div>
+                <img width="100%" src="./imgs/line.svg" alt="">
+                <p class="TextDark justify-text">
+                    با درس‌یار، دیگه نیازی نیست نگران مسائل ریاضی باشید! این مجموعه ابزارهای هوشمند بهتون کمک می‌کنه تا مفاهیم ریاضی هشتم رو سریع‌تر درک کنید و تمرینات رو بدون سردرگمی حل کنید. حالا می‌تونید محاسبات رو دقیق‌تر انجام بدید، اشتباهاتتون رو تصحیح کنید و با هر تمرینی که حل می‌کنید، بیشتر یاد بگیرید.
+                    درس‌یار طراحی شده تا یادگیری ریاضی رو براتون ساده‌تر، سریع‌تر و حتی لذت‌بخش‌تر کنه. ابزارهایی مثل عددنما، زاویه‌نما و بردارنما همراه شما هستن تا هر مسئله‌ای رو مرحله‌به‌مرحله حل کنید و بدون دردسر به جواب درست برسید. دیگه لازم نیست نگران فرمول‌های پیچیده باشید، چون این ابزارها همه محاسبات رو براتون انجام میدن.
+                    با درس‌یار، می‌تونید هر فصل رو با اطمینان جلو ببرید، به راحتی راه‌حل مسائل رو پیدا کنید و از هر اشتباه برای یادگیری بهتر استفاده کنید. دیگه هیچ تمرین ریاضی براتون سخت نخواهد بود و حل مسائل از همیشه آسون‌تر می‌شه!
+                </p>
+            </div>
+            <div class="col-12 col-md-6 d-flex justify-content-center">
+                <img class="w-75 h-75" src="./imgs/abr-darsyar.webp" alt="تصویر ابر">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div>
+            <div class="text-center">
+                <h3 class="HeadlineText m-0">زاویه‌های این شکل رو می‌خوای؟</h3>
+            </div>
+            <div class="row mt-2">
+                <div class="box-text-bordar col-12">
+                    <p class="text-center text-gray">
+                        شک داری چندضلعی منتظمت چه زاویه‌هایی داره؟ دیگه نیازی نیست خودت حساب و کتاب کنی! با زاویه‌نما فقط تعداد اضلاع رو وارد کن، و ابزار ما سریع برات محاسبه می‌کنه که هر زاویه داخلی و خارجی چند درجه‌ست.  نیازی به فرمول نداری! همه چیز سریع، ساده و بدون دردسر! امتحانش کن، شاید نتیجه‌ش برات جالب باشه! 
+                    </p>
+                </div>
+            </div>
+            <div class="box-darsyar p-3">
+                <input type="number" id="sideCount" class="input-box" placeholder="تعداد اضلاع">
+                <button class="btn-axis mt-2" onclick="calculateAngles()">محاسبه</button>
+                <h5 class="text-center" id="result"></h5>
+            </div>
+        </div>
+
+        <div class="mt-5">
+            <div class="text-center">
+                <h3 class="HeadlineText m-0">بردارها رو راحت رسم کن!</h3>
+            </div>
+            <div class="row mt-2">
+                <div class="box-text-bordar col-12">
+                    <p class="text-center text-gray">
+                        با بردارنما، دیگه لازم نیست بردارها رو دستی بکشید! فقط مختصات ابتدا و انتها رو وارد کنید، و ابزار ما بردار رو براتون دقیق رسم می‌کنه.
+                        چه برای تمرین، چه برای یادگیری، بردارنما همیشه کنار شماست تا کار با بردارها رو آسون کنه. امتحانش کن، از این ساده‌تر نمی‌شه!
+                    </p>
+                </div>
+            </div>
+            <div class="box-darsyar p-3">
+                <div class="mx-1 d-flex justify-content-center row">
+                    <input type="number" id="xCoord" class="input-box" placeholder="-200 تا 200 X">
+                    <input type="number" id="yCoord" class="input-box mt-2" placeholder="-200 تا 200 Y">
+                    <button class="btn-axis mt-2" onclick="moveBox()">رسم بردار</button>
+                </div>
+                <div class="playground" id="playground">
+                    <div class="axis-line x-axis"></div>
+                    <div class="axis-line y-axis"></div>
+                    <div class="box-axis" id="box"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-5">
+            <div class="text-center">
+                <h3 class="HeadlineText m-0">این عدد اوله یا مرکب؟</h3>
+            </div>
+            <div class="row mt-2">
+                <div class="box-text-bordar col-12">
+                    <p class="text-center text-gray">
+                        با عددنما، دیگه نیازی نیست خودت محاسبه کنی! فقط عدد مورد نظرت رو وارد کن، و ابزار ما فوری بهت می‌گه که اول هست یا مرکب.
+                        همه چیز سریع، ساده و بدون دردسر! امتحانش کن، شاید جوابش برات جالب باشه! هر عددی که به ذهنت می‌رسه رو تست کن و ببین چه عددهایی واقعاً خاص هستن.
+                    </p>
+                </div>
+            </div>
+            <div class="box-darsyar p-3">
+                <input type="number" id="numberInput" class="input-box" placeholder="یک عدد وارد کنید">
+                <button class="btn-axis mt-2" id="checkButton">بررسی</button>
+                <h5 class="text-center" id="result-num"></h5>
+            </div>
+        </div>
+
+        <div class="mt-5">
+            <div class="text-center">
+                <h3 class="HeadlineText m-0">وترنما محاسبه وتر رو سریع کرده!</h3>
+            </div>
+            <div class="row mt-2">
+                <div class="box-text-bordar col-12">
+                    <p class="text-center text-gray">
+                        فقط کافیه طول دو ضلع مثلث رو وارد کنی، و ابزار ما فوری طول وتر رو برایت محاسبه می‌کنه. همه چیز سریع، ساده و بدون دردسر! امتحانش کن، شاید جوابش برات جالب باشه! هر دو ضلع رو وارد کن و ببین طول وتر چقدر میشه.
+                        "وترنما" اینجا به کمک شماست تا به راحتی محاسبات مثلث‌های راست‌گوشه رو انجام بدید. امتحان کن و نتیجه رو سریعاً ببین!
+                    </p>
+                </div>
+            </div>
+            <div class="box-darsyar p-3">
+                <input type="number" id="inp-vatar1" class="input-box" placeholder="ضلع a">
+                <input type="number" id="inp-vatar2" class="input-box mt-2" placeholder="ضلع b">
+                <button class="btn-axis mt-2" onclick="findVatar()">محاسیه وتر</button>
+                <h5 class="text-center mt-3" id="result-vatar"></h5>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer row flex-row-reverse m-0">
+        <div class="page-footer col-12 col-md-3 col-lg-2 px-4">
+            <ul class="list-unstyled">
+                <li class="text-gray">صفحات</li>
+                <li><a href="./DarsyarPage.html">درس‌یار</a></li>
+                <li><a href="./Question-Page.html">بانک سوال</a></li>
+                <li><a href="./HomePage.html">صفحه اصلی</a></li>
+            </ul>
+        </div>
+        <div class="about-footer col-12 col-md-3 col-lg-3 px-4">
+            <ul class="list-unstyled">
+                <li class="text-gray">نشانی</li>
+                <li>مدرسه حضرت فاطمه</li>
+                <li>تماس:09134610630</li>
+                <li>ایدی شاد :@iSaba2011</li>
+                <li>ایمیل:sabakalantari2013@gmail.com</li>
+            </ul>
+        </div>
+        <div class="text-footer col-12 col-md-4 col-lg-5">
+            <ul class="list-unstyled">
+                <li class="text-gray justify-text">
+                    در مزداهیک تلاش می‌کنیم تا شما را در یادگیری ریاضی پایه هشتم همراهی کنیم. با استفاده از ابزارهای کاربردی، مقالات آموزنده و آزمون‌های آنلاین، می‌توانید مسائل ریاضی را به راحتی حل کنید و با مفاهیم پیچیده آشنا شوید. همچنین با مطالعه مقالات، به تاریخچه ریاضیات و دستاوردهای بزرگ‌ترین ریاضیدانان دنیا پی خواهید برد.
+                    هدف ما ایجاد محیطی جذاب و حمایتی است که به شما کمک کند مهارت‌های ریاضی خود را تقویت کنید. با ابزارهای مدرن و منابع آموزشی متنوع، مسیر یادگیری شما سریع‌تر و راحت‌تر خواهد شد.      
+                </li>
+            </ul>
+        </div>
+        <div class="logo-footer col-12 col-md-2 col-lg-2 d-flex justify-content-center">
+            <img width="150px" height="150" src="./imgs/icon-kharazmi.png" alt="">
+        </div>
+    </div>
+
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/java.js"></script>
+    <script src="./bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script>  
+
+</body>

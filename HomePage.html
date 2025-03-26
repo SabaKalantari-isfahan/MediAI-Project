@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحه اصلی | مزداهیک</title>
+    <link rel="stylesheet" href="./bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" type="image/png" href="./imgs/icon-kharazmi.png">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+<body>
+
+    <div class="bg-nav">
+        <div class="row px-2 py-2 navbar navbar-home">
+
+            <div class="col-md-10 d-none d-md-block container">
+                <ul class="list-unstyled d-flex align-items-center m-0">
+                    <li><a class="navbar-brand p-2 d-block active" href="HomePage.html">صفحه اصلی</a></li>
+                    <li><a class="navbar-brand p-2 d-block" href="./Question-Page.html">بانک سوال</a></li>
+                    <li><a class="navbar-brand p-2 d-block" href="./Calculator-Page.html">ماشین حساب</a></li>
+                    <li><a class="navbar-brand p-2 d-block" href="./DarsyarPage.html">درس یار</a></li>
+                    <div class="dropdown">
+                        <li><a class="navbar-brand p-2 d-block dropdownMenuButton" href="./BlogsPage.html">
+                            <span>مقاله ها</span>
+                            <span><i class="bi bi-caret-down-fill nav-down-icon"></i></span>
+                        </a></li>
+                        <div class="dropdown-menu">
+                            <a class="d-block my-2 mx-3 navbar-brand" href="./blogs-html/blog-math.html">تاریخ ریاضیات</a>
+                            <a class="d-block my-2 mx-3 navbar-brand" href="./blogs-html/Mathematician.html">ریاضیدانان بزرگ ایرانی</a>
+                            <a class="d-block my-2 mx-3 navbar-brand" href="./blogs-html/Tavan-Page.html">توان در ریاضیات</a>
+                            <a class="d-block my-2 mx-3 navbar-brand" href="./blogs-html/Pythagoras-Page.html">رابطه فیثاغورس</a>
+                            <a class="d-block my-2 mx-3 navbar-brand" href="./blogs-html/Kharazmi.html">مسابقات خوارزمی</a>
+                        </div>
+                    </div>
+                    <li><a class="navbar-brand p-2 d-block" href="./Test-Page.html">تست</a></li>
+                    <li><a class="navbar-brand p-2 d-block" href="./AboutPage.html">درباره من</a></li>
+                </ul>
+            </div>
+    
+            <div class="col-6 d-md-none d-flex">
+                <i class="bi bi-list icontextnavbar" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></i>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasRightLabel ">منوی کاربر</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <ul class="list-unstyled">
+                        <li class="active-bg-navbar"><a class="navbar-brand d-block TextDark" href="HomePage.html"><i class="bi fs-5 bi-house-fill"></i>صفحه اصلی</a></li>
+                        <li><a class="navbar-brand d-block TextDark" href="./Question-Page.html">بانک سوال</a></li>
+                        <li><a class="navbar-brand d-block TextDark" href="Calculator-Page.html">ماشین حساب</a></li>
+                        <li><a class="navbar-brand d-block TextDark" href="./DarsyarPage.html">درس یار</a></li>
+                        <li><a class="navbar-brand d-block TextDark" href="./BlogsPage.html">مقاله ها</a></li>
+                        <li><a class="navbar-brand d-block TextDark" href="Test-Page.html">تست</a></li>
+                        <li><a class="navbar-brand d-block TextDark" href="./AboutPage.html">درباره من</a></li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-2 d-flex justify-content-center">
+                <img class="logo" src="./imgs/icon-kharazmi.png" alt="">
+            </div>
+    
+        </div> 
+    </div>
+
+    <div class="bg-home-header">
+        <div class="container">
+            <div class="header-home row">
+                <div class="text-header-home col-12 col-md-6">
+                    <h1 class="fs-1 mt-5 font-bold">مزداهیک</h1>
+                    <div class="box-typing mt-2">
+                        <span class="h3 HeadlineText m-0" id="type-text"></span>
+                    </div>
+                    <p class="justify-text mt-3">
+                        اینجا جایی است که عشق به ریاضیات و علاقه به یادگیری در هم تنیده شده‌اند. در مزداهیک، ما تلاش می‌کنیم تا دانش ریاضی را به روشی ساده و قابل فهم به شما انتقال دهیم. شما می‌توانید از مطالب جذاب و آموزنده‌ای درباره تاریخچه ریاضیات، بزرگان این علم و کشف‌های شگفت‌انگیز آن لذت ببرید. همچنین، ما مطالب ویژه‌ای برای دانش‌آموزان ریاضیات هشتم فراهم کرده‌ایم تا بتوانند به راحتی مطالب درسی خود را بیاموزند. در اینجا، هر روز فرصتی است برای یادگیری و کشف چیزهای جدید. از همراهی شما خوشحالیم و امیدواریم با هم دنیای ریاضیات را بهتر بشناسیم. 
+                    </p>
+                    <div class="d-flex row justify-content-start py-2">
+                        <a class="navbar-brand col-12 col-lg-3 mt-3 d-flex justify-content-center align-items-center" href="BlogsPage.html">
+                            <span><i class="bi bi-file-earmark-text-fill px-1 fs-5"></i></span>
+                            <span>مقاله ها</span>
+                        </a>
+                        <a class="navbar-brand col-12 col-lg-3 mt-3 d-flex justify-content-center align-items-center mx-md-3" href="Calculator-Page.html">
+                            <span><i class="bi bi-calculator-fill px-1 fs-5"></i></span>
+                            <span>ماشین حساب</span>
+                        </a>
+                        <a class="navbar-brand col-12 col-lg-3 mt-3 d-flex justify-content-center align-items-center" href="./DarsyarPage.html">
+                            <span ><i class="bi bi-lightbulb-fill fs-5"></i></span>
+                            <span>درس یار</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="body-cloud d-none d-md-flex col-md-6 justify-content-center">
+                    <div class="cloud-container">
+                        <img src="./imgs/Abr1.PNG" alt="ابر ریاضی" class="cloud">
+                        <div id="math-symbols"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="math-eight container mt-5">
+        <div class="row">
+            <div class="col-7 col-md-5 col-lg-4">
+                <h3 class="d-flex headline">
+                    <span><i class="bi bi-journal-album headline-logo fs-4 d-flex"></i></span>
+                    <span class="h3 headline-m font-bold">ریاضیات هشتم</span>
+                </h3>
+            </div>
+            <div class="col-1 col-md-5 col-lg-6">
+                <img class="w-line" src="./imgs/line.svg" alt="">
+            </div>
+            <div class="col-4 col-md-2 col-lg-2 d-flex justify-content-end">
+                <a class="navbar-brand" href="MathPage.html">مشاهد همه...</a>
+            </div>
+        </div>
+        <div class="box-cards-eight-math">
+            <div class="row d-flex justify-content-center justify-content-md-evenly">
+                <div class="col-12 col-md-6 col-lg-4 p-3">
+                    <div class="card-eight-math">
+                        <img src="./imgs/math-8/fasl-one.png" alt="">
+                        <h4>عدد های صحیح و گویا</h4>
+                        <p>فصل یک</p>
+                        <button class="btn-card-math-eight" data-target="modal1">ببینیم چه خبره!</button>
+                    </div>
+                    <div id="modal1" class="modal">
+                        <div class="modal-content p-3">
+                            <span class="close">&times;</span>
+                            <h4 class="font-bold">عدد های صحیح و گویا</h4>
+                            <p class="mt-2">
+                                فصل اول ریاضی هشتم با عنوان "عددهای صحیح و گویا" یکی از مهم‌ترین مباحث پایه‌ای در ریاضیات است. این فصل پایه و اساس بسیاری از مباحث بعدی در ریاضی را تشکیل می‌دهد و یادگیری صحیح آن می‌تواند در حل مسائل پیچیده‌تر در آینده بسیار کمک‌کننده باشد.
+                            </p>
+                            <h5 class="HeadlineText">۱. یادآوری عددهای صحیح و گویا</h5>
+                            <p class="m-1 mx-3">
+                                در ابتدای فصل، یک مرور کلی بر عددهای صحیح انجام می‌شود. عددهای صحیح شامل مجموعه‌ای از اعداد مثبت، صفر و اعداد منفی هستند که هیچ بخش اعشاری ندارند. به عبارت دیگر:
+                            </p>
+                            <p class="m-1 mx-3">(... ،۳ ،۲ ،۱ ،۰ ،۱- ،۲- ،۳- ...)</p>
+                            <p class="m-1 mx-3">
+                                عددهای گویا به اعدادی گفته می‌شوند که می‌توان آن‌ها را به‌صورت "a تقسیم بر b" نوشت، که در آن a و b عددهای صحیح هستند و b نباید صفر باشد.
+                            </p>
+                        
+                            <h5 class="HeadlineText mt-3">۲. مقایسه و مرتب‌سازی اعداد گویا</h5>
+                            <p class="m-1 mx-3">در این بخش، روش‌هایی برای مقایسه عددهای گویا بررسی می‌شود. برخی از این روش‌ها شامل:</p>
+                            <ul class="px-5">
+                                <li>مقایسه با استفاده از مخرج مشترک: ابتدا مخرج کسرها را یکسان کرده و سپس صورت آن‌ها را مقایسه می‌کنیم.</li>
+                                <li class="mt-1">نمایش روی محور اعداد: عددهای گویا را می‌توان روی محور اعداد نمایش داد و موقعیت آن‌ها را نسبت به یکدیگر مشخص کرد.</li>
+                                <li class="mt-1">تبدیل به عدد اعشاری: برخی از عددهای گویا را می‌توان به عدد اعشاری تبدیل کرده و راحت‌تر مقایسه کرد.</li>
+                            </ul>
+
+                            <h5 class="HeadlineText mt-3">۳. جمع و تفریق عددهای گویا</h5>
+                            <p class="m-1 mx-3">
+                                جمع و تفریق عددهای گویا نیاز به تعیین مخرج مشترک دارد. مراحل اصلی برای جمع و تفریق عبارتند از:
+                            </p>
+                            <ul class="px-5">
+                                <li>پیدا کردن مخرج مشترک</li>
+                                <li>تبدیل کسرها به کسرهایی با مخرج مشترک</li>
+                                <li>جمع یا تفریق صورت کسرها</li>
+                                <li>ساده کردن کسر در صورت امکان</li>
+                            </ul>
+                        
+                            <h5 class="HeadlineText mt-3">۴. ضرب و تقسیم عددهای گویا</h5>
+                            <p class="m-1 mx-3">
+                                ضرب عددهای گویا آسان‌تر از جمع و تفریق است، زیرا نیازی به مخرج مشترک نیست. برای ضرب دو کسر، فقط صورت‌ها و مخرج‌ها را در یکدیگر ضرب می‌کنیم.
+                            </p>
+                            <p class="m-1 mx-3">اما در تقسیم عددهای گویا، کسر دوم را معکوس کرده و ضرب می‌کنیم.</p>
+
+                            <h5 class="HeadlineText mt-3">۵. حل مسائل و کاربردها</h5>
+                            <p class="m-1 mx-3">در انتهای فصل، با استفاده از مفاهیم تدریس‌شده، مسائل کاربردی مطرح می‌شود. این مسائل معمولاً شامل:</p>
+                            <ul class="px-5">
+                                <li>مقایسه قیمت‌ها و محاسبه تخفیف‌ها</li>
+                                <li>تعیین میانگین اعداد</li>
+                                <li>بررسی افزایش و کاهش دما</li>
+                                <li>کار با نسبت‌ها و مقیاس‌ها</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 p-3">
+                    <div class="card-eight-math">
+                        <img src="./imgs/math-8/fasl-two.png" alt="">
+                        <h4>عدد های اول</h4>
+                        <p>فصل دو</p>
+                        <button class="btn-card-math-eight" data-target="modal2">ببینیم چه خبره!</button>
+                    </div>
+                    <div id="modal2" class="modal">
+                        <div class="modal-content p-3">
+                            <span class="close">&times;</span>
+                            <h4 class="font-bold">عدد های اول</h4>
+                            <p class="mt-2">
+                                فصل دوم ریاضی هشتم با عنوان "عددهای اول" به بررسی و درک کامل عددهای اول و ویژگی‌های آن‌ها می‌پردازد. این فصل پایه‌ای برای مباحث پیچیده‌تر در نظریه عددی است و به درک بهتر ساختار عددها کمک می‌کند.
+                            </p>
+                            <h5 class="HeadlineText">۱. یادآوری عددهای اول</h5>
+                            <p class="m-1 mx-3">
+                                در ابتدای فصل، یک مرور کلی بر عددهای اول انجام می‌شود. عددهای اول اعدادی هستند که تنها دو مقسوم‌علیه دارند: ۱ و خود عدد. به عبارت دیگر، عدد اول نمی‌تواند به جز این دو عدد، بر عدد دیگری بخش‌پذیر باشد. برای مثال:
+                            </p>
+                            <p class="m-1 mx-3">(۲، ۳، ۵، ۷، ۱۱، ۱۳، ...)</p>
+                        
+                            <h5 class="HeadlineText mt-3">۲. شناسایی عددهای اول</h5>
+                            <p class="m-1 mx-3">در این بخش، روش‌های مختلفی برای شناسایی عددهای اول معرفی می‌شود. برخی از این روش‌ها شامل:</p>
+                            <ul class="px-5">
+                                <li>مقایسه با استفاده از مخرج مشترک: ابتدا مخرج کسرها را یکسان کرده و سپس صورت آن‌ها را مقایسه می‌کنیم.</li>
+                                <li class="mt-1">نمایش روی محور اعداد: عددهای گویا را می‌توان روی محور اعداد نمایش داد و موقعیت آن‌ها را نسبت به یکدیگر مشخص کرد.</li>
+                                <li class="mt-1">تبدیل به عدد اعشاری: برخی از عددهای گویا را می‌توان به عدد اعشاری تبدیل کرده و راحت‌تر مقایسه کرد.</li>
+                            </ul>
+
+                            <h5 class="HeadlineText mt-3">۳. محاسبات مرتبط با عددهای اول</h5>
+                            <p class="m-1 mx-3">در این بخش به محاسبات مرتبط با عددهای اول پرداخته می‌شود، از جمله:</p>
+                            <ul class="px-5">
+                                <li>محاسبه بزرگ‌ترین مقسوم‌علیه مشترک (ب.م.م) و کوچک‌ترین مضرب مشترک (ک.م.م): استفاده از عددهای اول برای یافتن ب.م.م و ک.م.م.</li>
+                                <li class="mt-1">فاکتورگیری: تجزیه عددها به حاصل‌ضرب عددهای اول.</li>
+                            </ul>
+                        
+                            <h5 class="HeadlineText mt-3">۴. حل مسائل و کاربردها</h5>
+                            <p class="m-1 mx-3">اما در انتهای فصل، با استفاده از مفاهیم تدریس‌شده، مسائل کاربردی مطرح می‌شود. این مسائل شامل:</p>
+                            <ul class="px-5">
+                                <li>بررسی عددهای اول بزرگ و پیدا کردن آن‌ها.</li>
+                                <li>کاربردهای عددهای اول در مسائل رمزنگاری.</li>
+                                <li>بررسی الگوهای مختلف در عددهای اول.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 p-3">
+                    <div class="card-eight-math">
+                        <img src="./imgs/math-8/fasl-three.png" alt="">
+                        <h4>چند ضلعی ها</h4>
+                        <p>فصل سه</p>
+                        <button class="btn-card-math-eight" data-target="modal3">ببینیم چه خبره!</button>
+                    </div>
+                    <div id="modal3" class="modal">
+                        <div class="modal-content p-3">
+                            <span class="close">&times;</span>
+                            <h4 class="font-bold">چند ضلعی ها</h4>
+                            <p class="mt-2">
+                                فصل سوم ریاضی هشتم با عنوان "چند ضلعی‌ها" به معرفی و بررسی انواع مختلف چند ضلعی‌ها و ویژگی‌های آن‌ها می‌پردازد. این فصل به درک بهتر از اشکال هندسی و کاربردهای آن‌ها در زندگی روزمره کمک می‌کند.
+                            </p>
+                            <h5 class="HeadlineText">۱. معرفی چند ضلعی‌ها</h5>
+                            <p class="m-1 mx-3">
+                                در ابتدای فصل، مفهوم چند ضلعی و انواع آن معرفی می‌شود. چند ضلعی‌ها اشکالی هستند که دارای ضلع‌ها و زوایای متعددی هستند و بر حسب تعداد ضلع‌ها به دسته‌های مختلفی تقسیم می‌شوند، مانند:
+                            </p>
+                            <ul class="px-5">
+                                <li>مثلث (سه ضلع)</li>
+                                <li class="mt-1">مربع و مستطیل (چهار ضلع)</li>
+                                <li class="mt-1">پنج ضلعی (پنج ضلع)</li>
+                                <li class="mt-1">شش ضلعی (شش ضلع)</li>
+                                <li class="mt-1">و... </li>
+                            </ul>
+
+                            <h5 class="HeadlineText mt-3">۲. خواص و ویژگی‌های چند ضلعی‌ها</h5>
+                            <p class="m-1 mx-3">در این بخش به خواص و ویژگی‌های چند ضلعی‌ها پرداخته می‌شود، از جمله:</p>
+                            <ul class="px-5">
+                                <li>مجموع زوایای داخلی: مجموع زوایای داخلی یک n ضلعی به تعداد ضلع‌های آن بستگی دارد و از فرمول ($(n-2) \times 180) درجه استفاده می‌شود، که در آن n تعداد ضلع‌ها است.</li>
+                                <li class="mt-1">تقارن: بررسی تقارن‌های محوری و مرکزی در چند ضلعی‌ها.</li>
+                            </ul>
+
+                            <h5 class="HeadlineText mt-3">۳. انواع مثلث‌ها</h5>
+                            <p class="m-1 mx-3">در این بخش به بررسی مثلث‌ها و انواع آن‌ها پرداخته می‌شود:</p>
+                            <ul class="px-5">
+                                <li>مثلث متساوی الساقین: دو ضلع برابر و دو زاویه برابر دارد.</li>
+                                <li class="mt-1">مثلث متساوی الاضلاع: سه ضلع برابر و سه زاویه برابر دارد.</li>
+                                <li class="mt-1">مثلث قائم الزاویه: یک زاویه ۹۰ درجه دارد.</li>
+                            </ul>
+
+                            <h5 class="HeadlineText mt-3">۴. مساحت و محیط چند ضلعی‌ها</h5>
+                            <p class="m-1 mx-3">در این بخش به محاسبه مساحت و محیط چند ضلعی‌ها پرداخته می‌شود:</p>
+                            <ul class="px-5">
+                                <li>مساحت مثلث: با استفاده از قاعده و ارتفاع یا فرمول هردون.</li>
+                                <li class="mt-1">مساحت مربع و مستطیل: ضرب طول در عرض.</li>
+                                <li class="mt-1">محیط چند ضلعی‌ها: جمع طول تمامی اضلاع.</li>
+                            </ul>
+                        
+                            <h5 class="HeadlineText mt-3">۴. حل مسائل و کاربردها</h5>
+                            <p class="m-1 mx-3">در انتهای فصل، با استفاده از مفاهیم تدریس‌شده، مسائل کاربردی مطرح می‌شود. این مسائل شامل:</p>
+                            <ul class="px-5">
+                                <li>محاسبه مساحت باغ یا اتاق با استفاده از چند ضلعی‌ها.</li>
+                                <li>بررسی ویژگی‌های پل‌های ساخته شده با استفاده از اشکال هندسی.</li>
+                                <li>محاسبه محیط و مساحت اشکال مختلف در نقشه‌کشی.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-2">
+        <div class="row">
+            <div class="row d-flex justify-content-evenly mt-4">
+                <div class="col-7 col-md-5 col-lg-4">
+                    <h3 class="d-flex headline">
+                        <span><i class="bi bi-tools headline-logo fs-4 d-flex"></i></span>
+                        <span class="h3 headline-m font-bold">کاربرد ریاضیات</span>
+                    </h3>
+                </div>
+                <div class="col-5 col-md-7 col-lg-8 d-flex justify-content-center">
+                    <img class="w-line" src="./imgs/line.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="row box-karbord">
+            <div class="col-12 mb-3 p-4 w-100">
+                <h5 class="HeadlineText m-0">ریاضی به چه دردی می‌خوره؟ بیشتر از چیزی که فکرش رو کنی!</h5>
+                <p>
+                    شاید تا حالا پیش خودت گفته باشی: «این همه فرمول و عدد و معادله تو زندگی به چه دردی می‌خوره؟» اما واقعیت اینه که ریاضی همیشه و همه‌جا کنارمونه، حتی وقتی حواسمون بهش نیست!
+                    مثلاً وقتی داری خرید می‌کنی و حساب می‌کنی چقدر باید پرداخت کنی، یا وقتی داری سرعت رسیدن به مقصدتو تخمین می‌زنی، یا حتی وقتی یه پیتزا رو بین دوستات عادلانه تقسیم می‌کنی، در واقع داری از ریاضی استفاده می‌کنی.
+                    ریاضی فقط یه درس مدرسه‌ای نیست، بلکه یه مهارت برای زندگیه! در ادامه، چند تا مثال از کاربردهای ریاضی رو برات آوردیم که ببینی چطور تو زندگی روزمره‌مون تاثیر داره.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="tabs-home container mt-2">
+        <div class="row justify-content-evenly">
+            <button class="btn-tabs btn-tab-bodar" onclick="bordar()">بردار و مختصات</button>
+            <button class="btn-tabs btn-tabs-triangle" onclick="triangle()">مثلت</button>
+            <button class="btn-tabs btn-tabs-jabr" onclick="jabr()">جبر</button>
+        </div>
+        <div class="pages-tab">
+            <div class="jabr-tab mt-3 d-none">
+                <p class="text-gray text-center">                
+                    جبر یکی از شاخه‌های اساسی ریاضیات است که در بسیاری از زمینه‌های علمی و عملی کاربرد دارد. در جبر، ما از نمادها و حروف به جای اعداد استفاده می‌کنیم تا معادلات و معادلات دیفرانسیل را حل کنیم. این شاخه از ریاضیات در مهندسی، علوم کامپیوتر، فیزیک و اقتصاد بسیار مفید است. مثلاً در مهندسی برق، جبر برای تحلیل و طراحی مدارهای الکتریکی استفاده می‌شود. همچنین، در اقتصاد و امور مالی، جبر به ما کمک می‌کند تا مدل‌های اقتصادی را تحلیل و بهبود بخشیم. جبر به ما امکان می‌دهد مسائل پیچیده را با استفاده از قوانین و قواعد خاص حل کنیم و درک بهتری از الگوها و ساختارهای ریاضی داشته باشیم. در علوم کامپیوتر نیز، جبر برای طراحی الگوریتم‌ها و تحلیل داده‌ها بسیار اهمیت دارد. جبر، به عنوان ابزاری قدرتمند، به ما کمک می‌کند تا دنیای پیچیده پیرامونمان را به شیوه‌ای منطقی و ریاضی تحلیل کنیم.
+                </p>
+                <div class="img-tab row justify-content-evenly">
+                    <img class="col-6 col-md-3" src="./imgs/img-tabs/mohanesi.png" alt="">
+                    <img class="col-6 col-md-3" src="./imgs/img-tabs/programing.png" alt="">
+                    <img class="col-6 col-md-3" src="./imgs/img-tabs/agtasad.png" alt="">
+                    <img class="col-6 col-md-3" src="./imgs/img-tabs/market.png" alt="">
+                </div>
+            </div>
+            <div class="bordar-tab mt-3 ">
+                <p class="text-gray text-center">
+                    بردارها و مختصات در زندگی روزمره و علوم مختلف کاربردهای فراوانی دارند. در نقشه‌برداری و سیستم‌های موقعیت‌یابی جهانی (GPS)، بردارها و مختصات برای تعیین دقیق موقعیت‌ها و مسیرها استفاده می‌شوند. همچنین، در فیزیک و مهندسی، بردارها برای نمایش نیروها، سرعت‌ها و جهت‌ها استفاده می‌شوند که به تحلیل و پیش‌بینی رفتار سیستم‌ها کمک می‌کند. در گرافیک کامپیوتری و طراحی بازی‌های ویدئویی، بردارها و مختصات برای ایجاد و حرکت اشیا در فضاهای سه‌بعدی به کار می‌روند. در هوانوردی و دریانوردی، بردارها به تعیین مسیرهای پرواز و ناوبری کمک می‌کنند. در علم اقتصاد و آمار، بردارها برای تحلیل داده‌ها و مدل‌سازی روابط بین متغیرها استفاده می‌شوند. در واقع، بردارها و مختصات ابزارهای قدرتمندی هستند که به ما کمک می‌کنند تا دنیای پیچیده پیرامونمان را به شیوه‌ای دقیق و کارآمد تحلیل کنیم و تصمیم‌های بهتری بگیریم. به طور کلی، کاربردهای بردار و مختصات بهبود کیفیت زندگی و بهره‌وری را در بسیاری از زمینه‌ها امکان‌پذیر می‌سازند.
+                </p>
+                <div class="img-tab row justify-content-evenly">
+                    <img class="col-6 col-md-3" src="./imgs/img-tabs/gps" alt="">
+                    <img class="col-6 col-md-3" src="./imgs/img-tabs/fizik-bordar.png" alt="">
+                    <img class="col-6 col-md-3" src="./imgs/img-tabs/gem-bordar.png" alt="">
+                    <img class="col-6 col-md-3" src="./imgs/img-tabs/hava$darya.png" alt="">
+                </div>
+            </div>
+            <div class="triangle-tab mt-3 d-none">
+                <p class="text-gray text-center">
+                    مثلث‌ها در زندگی روزمره و علوم مختلف کاربردهای فراوانی دارند. در معماری و ساخت‌وساز، شکل مثلث به عنوان یک ساختار بسیار پایدار و محکم استفاده می‌شود. پل‌ها و ساختمان‌ها اغلب از مثلث‌ها برای توزیع وزن و افزایش استحکام استفاده می‌کنند. در علم فیزیک، مثلث‌ها برای تحلیل نیروها و تعیین تعادل در سیستم‌های مختلف به کار می‌روند. همچنین، در هنر و طراحی، مثلث‌ها برای ایجاد ترکیب‌های جذاب و هماهنگ استفاده می‌شوند. در ریاضیات، مفاهیمی مانند قضیه فیثاغورث و مثلث‌بندی (trigonometry) بر پایه مثلث‌ها بنا شده‌اند و کاربردهای زیادی در محاسبات مهندسی و علمی دارند. در نقشه‌برداری و ژئودزی، مثلث‌بندی برای اندازه‌گیری فواصل و تعیین موقعیت‌ها استفاده می‌شود. همچنین، در روزمره نیز، از مثلث‌ها برای طراحی مسیرها، تحلیل حرکت‌ها و حتی در بازی‌های ورزشی مانند بیلیارد استفاده می‌کنیم. به طور کلی، مثلث‌ها به دلیل ویژگی‌های منحصر به فرد خود، نقش‌های بسیار مهمی در زندگی ما ایفا می‌کنند.
+                </p>
+                <div class="img-tab row justify-content-evenly">
+                    <img class="col-6 col-md-3" src="./imgs/img-tabs/mamari.png" alt="">
+                    <img class="col-6 col-md-3" src="./imgs/img-tabs/mosalas-karbord.png" alt="">
+                    <img class="col-6 col-md-3" src="./imgs/img-tabs/nagshe.png" alt="">
+                    <img class="col-6 col-md-3" src="./imgs/img-tabs/dilyard.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="baner-home baner-home-test row p-4">
+            <div class="col-12 col-md-5 col-lg-3 d-flex justify-content-cente">
+                <img src="./imgs/baners/img-blog.PNG" alt="تصویر علامت سوال">
+            </div>
+            <div class="col-12 col-md-7 col-lg-9">
+                <h4 class="TextDark mb-3">می دونی چقدر از دنیای ریاضیات و ریاضیدانان بزرگ اطلاعات داری؟ </h4>
+                <p class="TextDark mb-2">با مطالعه مقاله‌های متنوع و جذاب سایت ما، دانش و آگاهی خود را در دنیای ریاضیات گسترش بده و با مفاهیم پیچیده‌تر و کاربردی‌تر آشنا شو. سپس در این تست شرکت کن تا سطح دانش ریاضی خود را بسنجی و ببینی چقدر در این حوزه قوی هستی. فرصت عالی برای محک زدن توانایی‌هایت!</p>
+                <p class="TextDark mb-4">
+                    با هر مقاله‌ای که مطالعه می‌کنی، درک عمیق‌تری از دنیای ریاضی پیدا می‌کنی و به راحتی می‌تونی مفاهیم پیشرفته‌تر رو یاد بگیری. این تست به تو کمک می‌کنه تا به نقاط قوت و ضعف خود پی ببری و مسیر پیشرفت خود رو به‌طور دقیق‌تر تعیین کنی.
+                </p>
+                <a class="navbar-brand" href="./Test-Page.html">آماده تستی؟</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="cards-blogs-home mt-5 container">
+        <div class="row">
+            <div class="col-6 col-md-5 col-lg-3">
+                <h3 class="d-flex headline">
+                    <span><i class="bi bi-file-earmark-text-fill headline-logo fs-4 d-flex"></i></span>
+                    <span class="h3 headline-m font-bold">مقاله ها</span>
+                </h3>
+            </div>
+            <div class="col-2 col-md-5 col-lg-7">
+                <img class="w-line" src="./imgs/line.svg" alt="">
+            </div>
+            <div class="col-4 col-md-2 col-lg-2 d-flex justify-content-end">
+                <a class="navbar-brand" href="BlogsPage.html">مشاهد همه...</a>
+            </div>
+        </div>
+        <div class="row box-scroll-blog">
+            <div class="btn-scroll col-1 p-1 justify-content-end d-flex">
+                <button onclick="scroll_right()" class="p-2">
+                    <i class="bi bi-caret-right-fill d-flex justify-content-center"></i>
+                </button>
+            </div>
+            <ul class="box-cards-blogs d-flex list-unstyled col-10 p-2" id="ul-scroll">
+                <li>
+                    <div class="card-scroll-blog p-2">
+                        <img class="text-center" src="./imgs/img-card-blog/tarikh-new.png" alt="تصویر مقاله در مورد تاریخ ریاضیات">
+                        <div class="text-end">
+                            <h4 class="mt-2">تاریخ ریاضیات</h4>
+                            <p class="mt-2 text-gray justify-text">
+                                تاریخ ریاضی پر از دستاوردهای شگفت‌انگیز و شخصیت‌های برجسته‌ای است که تاثیرات عمیقی بر دنیای ما گذاشته‌اند. از اولین محاسبات عددی در تمدن‌های باستانی، مثل سومریان و مصریان، تا انقلاب‌های ریاضی در یونان باستان به وسیله افرادی همچون فیثاغورس و اقلیدس، تاریخ ریاضی همواره در حال پیشرفت بوده ...
+                            </p>
+                        </div>
+                        <p>
+                            <span>منبع : </span>
+                            <span>A History of Mathematics</span>
+                        </p>
+                        <p>
+                            <span>نویسنده : </span>
+                            <span>Carl B. Boyer</span>
+                        </p>
+                        <a class="navbar-brand" href="blogs-html/Pythagoras-Page.html">برو به مقاله </a>
+                    </div> 
+                </li>
+                <li>
+                    <div class="card-scroll-blog p-2">
+                        <img class="text-center" src="./imgs/img-card-blog/fiasaqores.png" alt="تصویر مقاله در مورد رابطه فیثاغورس">
+                        <div class="text-end">
+                            <h4 class="mt-2">رابطه فیثاغورس</h4>
+                            <p class="mt-2 text-gray justify-text">
+                                رابطه فیثاغورس یکی از معروف‌ترین قضایای هندسه است که در مثلث‌های قائم‌الزاویه به کار می‌رود. این رابطه بیان می‌کند که در یک مثلث قائم‌الزاویه، طول وتر برابر با مجموع طول دو ضلع دیگر به روش خاصی است. این قضیه به فیثاغورس، ریاضیدان یونانی نسبت داده می‌شود که در حدود 570 تا 495 قبل از میلاد زندگی می‌کرد. این رابطه در زمینه‌های ...
+                            </p>
+                        </div>
+                        <p>
+                            <span>منبع : </span>
+                            <span>ویکی‌پدیا</span>
+                        </p>
+                        <p>
+                            <span>نویسنده : </span>
+                            <span>ناشناس</span>
+                        </p>
+                        <a class="navbar-brand" href="blogs-html/blog-math.html">برو به مقاله </a>
+                    </div> 
+                </li>
+                <li>
+                    <div class="card-scroll-blog p-2">
+                        <img class="text-center" src="./imgs/img-card-blog/cardsblog.png " alt="تصویر مقاله در مورد ریاضیدانان بزرگ ایرانی">
+                        <div class="text-end">
+                            <h4 class="mt-2">ریاضیدانان بزرگ ایرانی</h4>
+                            <p class="mt-2 text-gray justify-text">
+                                ریاضیدانان ایرانی نقش بسزایی در تاریخ علم و ریاضیات داشته‌اند. این دانشمندان با دستاوردهای خود، نه تنها بر پیشرفت‌های علمی تاثیرگذار بوده‌اند، بلکه به شکل‌گیری جریان‌های فکری و فلسفی نیز کمک کرده‌اند. تلاش‌های بی‌وقفه و نبوغ این بزرگان، ایران را به یکی از مراکز اصلی علم و دانش در جهان تبدیل کرده است ...
+                            </p>
+                        </div>
+                        <p>
+                            <span>منبع : </span>
+                            <span>زندگی‌نامه ریاضیدانان ایرانی</span>
+                        </p>
+                        <p>
+                            <span>نویسنده : </span>
+                            <span>زین‌العابدین رهنما</span>
+                        </p>
+                        <a class="navbar-brand" href="blogs-html/Mathematician.html">برو به مقاله </a>
+                    </div> 
+                </li>
+                <li>
+                    <div class="card-scroll-blog p-2">
+                        <img class="text-center" src="./imgs/img-card-blog/tavan.png" alt="تصویر مقاله در مورد توان در ریاضیات">
+                        <div class="text-end">
+                            <h4 class="mt-2">توان در ریاضیات</h4>
+                            <p class="mt-2 text-gray justify-text">
+                                توان یکی از مفاهیم اساسی در ریاضیات و علوم است که به معنای ضرب تکراری یک عدد در خودش می‌باشد. به طور کلی، توان‌ها به شکلa^n نمایش داده می‌شوند، که در آنa پایه و n نمایه یا توان است. قوانین توان‌ها شامل جمع و تفریق توان‌ها در ضرب و تقسیم و همچنین معکوس توان‌های منفی است. این قوانین به ساده‌سازی ...
+    
+                            </p>
+                        </div>
+                        <p>
+                            <span>منبع : </span>
+                            <span>ویکی‌پدیا</span>
+                        </p>
+                        <p>
+                            <span>نویسنده : </span>
+                            <span>ناشناس</span>
+                        </p>
+                        <a class="navbar-brand" href="blogs-html/Tavan-Page.html">برو به مقاله </a>
+                    </div> 
+                </li>
+            </ul>
+            <div class="btn-scroll col-1 p-1">
+                <button onclick="scroll_left()" class="p-2"><i class="bi bi-caret-left-fill d-flex justify-content-center"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <h3 class="d-flex headline">
+                    <span><i class="bi bi-patch-question-fill headline-logo fs-4 d-flex"></i></span>
+                    <span class="h3 headline-m font-bold">سوالات شما</span>
+                </h3>
+                <p class="text-gray mt-2">
+                    این‌ها سوالاتی هستند که بیشتر افراد از ما می‌پرسند. شاید جواب سوال شما هم همین‌جا باشه! در این بخش تلاش کردیم به سوالات رایج و پرتکرار پاسخ بدیم تا شما سریع‌تر به جواب برسید.
+                </p>
+            </div>
+            <div class="col-12 col-md-6 mt-2">
+                <div class="box-q-home">
+                    <h5>
+                        هدف مزداهیک چیه ؟
+                        <span><i class="bi bi-caret-down-fill q-home-icon"></i></span>
+                    </h5>
+                    <p class="answer-q-home">
+                        سایت ما با هدف ارائه منابع آموزشی مفید در زمینه ریاضیات، به‌ویژه ریاضیات پایه هشتم، و معرفی ریاضیدانان بزرگ ایرانی ایجاد شده است. ما تلاش می‌کنیم تا دانش‌آموزان و علاقه‌مندان به ریاضیات را با مفاهیم ریاضی آشنا کنیم و الهام‌بخش آن‌ها در یادگیری و رشد علمی باشیم.
+                    </p>
+                </div>
+                <div class="box-q-home mt-3">
+                    <h5>
+                        سایت مزداهیک درباره چیه ؟
+                        <span><i class="bi bi-caret-down-fill q-home-icon"></i></span>
+                    </h5>
+                    <p class="answer-q-home">
+                        سایت ما به‌ مفاهیم ریاضی در پایه هشتم  و به معرفی ریاضیدانان برجسته ایرانی و جهانی پرداخته‌ایم و دستاوردهای علمی آن‌ها در تاریخ ریاضیات را مورد بررسی قرار داده‌ایم. هدف ما این است که از طریق آشنایی با این شخصیت‌های بزرگ علمی، الهام‌بخش یادگیری و پژوهش‌های ریاضی برای علاقه‌مندان به این علم باشیم.
+                    </p>
+                </div>
+                <div class="box-q-home mt-3">
+                    <h5>
+                        چرا اسم مزداهیک را انتخاب کردید؟
+                        <span><i class="bi bi-caret-down-fill q-home-icon"></i></span>
+                    </h5>
+                    <p class="answer-q-home">
+                        اسم سایت ما، «مزداهیک»، برگرفته از واژه‌ای در زبان پارسی باستان است که به معنای «علم حساب» یا «ریاضیات» می‌باشد. ما این نام را انتخاب کردیم تا به ریشه‌های علمی و تاریخی ریاضیات در فرهنگ ایرانی اشاره کنیم و نشان دهیم که علم ریاضی در تاریخ ما جایگاه ویژه‌ای داشته است.
+                    </p>
+                </div>
+                <div class="box-q-home mt-3">
+                    <h5>
+                        چرا آشنایی با ریاضیدانان برای مزداهیک مهم است؟
+                        <span><i class="bi bi-caret-down-fill q-home-icon"></i></span>
+                    </h5>
+                    <p class="answer-q-home">
+                        آشنایی با ریاضیدانان برای سایت «مزداهیک» اهمیت ویژه‌ای دارد زیرا این سایت به‌دنبال الهام‌بخشی و آشنایی کاربران با تاریخچه و دستاوردهای بزرگترین ریاضیدانان ایرانی است. این شخصیت‌ها نه تنها در شکل‌گیری علم ریاضی نقش داشته‌اند، بلکه تأثیرات عمیقی در پیشرفت‌های علمی و فرهنگی دنیا گذاشته‌اند. با آشنایی بیشتر با زندگی و دستاوردهای این بزرگان، کاربران سایت می‌توانند انگیزه و الهام بیشتری برای یادگیری و پیشرفت در علم ریاضیات پیدا کنند.
+                    </p>
+                </div>
+                <div class="box-q-home mt-3">
+                    <h5>
+                        چطور می‌تونم از تجربه‌های ریاضیدانان ایرانی بیشتر یاد بگیرم؟
+                        <span><i class="bi bi-caret-down-fill q-home-icon"></i></span>
+                    </h5>
+                    <p class="answer-q-home">
+                        سایت ما به‌طور ویژه به معرفی ریاضیدانان برجسته ایرانی و دستاوردهای علمی آن‌ها پرداخته است. با مطالعه مقالات و بخش‌های مختلف سایت، می‌توانید داستان‌های الهام‌بخش و آموزنده از زندگی این شخصیت‌ها را بیاموزید.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="baner-home baner-home-blog row p-4">
+            <div class="col-12 col-md-9">
+                <h4 class="TextDark mb-3">سفر به دنیای شگفت‌انگیز ریاضیات و نوابغ آن!</h4>
+                <p class="TextDark mb-2">
+                    ریاضی فقط اعداد و فرمول‌ها نیست، بلکه داستان‌هایی پر از هیجان، کشف‌های شگفت‌انگیز و ذهن‌هایی درخشان است که مسیر علم و زندگی بشر را تغییر داده‌اند! آیا تا به حال فکر کرده‌ای که ریاضیدانان بزرگی مثل فیثاغورث، خیام، خوارزمی یا ابوریحان چطور به ایده‌های درخشان خود رسیدند؟ چطور یک معادله ساده می‌تواند دنیایی از مفاهیم پنهان را در خود داشته باشد؟
+                </p>
+                <p class="TextDark mb-2">
+                    در این بخش، با سرگذشت نوابغ ریاضی، تاریخ کشف‌های مهم و نظریه‌هایی که دنیا را متحول کردند، آشنا می‌شوی. از اولین نشانه‌های ریاضیات در تمدن‌های باستانی گرفته تا پیشرفت‌های حیرت‌انگیز دنیای مدرن، همه اینجا منتظر تو هستند!
+                </p>
+                <h5 class="mb-4">پس بیا و همراه ما در این ماجراجویی علمی، تاریخ و زیبایی ریاضیات را کشف کن!</h5>
+                <a class="navbar-brand" href="./BlogsPage.html">یک قدم به دنیای ریاضی!</a>
+            </div>
+            <div class="col-12 col-md-3 d-flex justify-content-center">
+                <img src="./imgs/baners/baner-blog.PNG" alt="تصویر مقاله">
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row box-darsyar-home">
+            <div class="col-12 col-md-6">
+                <h3 class="d-flex headline">
+                    <span><i class="bi bi-lightbulb-fill headline-logo fs-4 d-flex"></i></span>
+                    <span class="h3 headline-m font-bold">درس‌یار</span>
+                </h3>
+                <p class="text-gray mt-2 justify-text">
+                    حل کردن مسائل ریاضی هشتم دیگه سخت نیست! با ابزارهای کاربردی که اینجا برات آماده کردیم، می‌تونی راحت‌تر و سریع‌تر مفاهیم رو درک کنی و جواب مسائل رو پیدا کنی. زاویه‌نما، عددنما و بردارنما کنار همن تا محاسبات رو برات ساده کنن. می‌خوای بدونی یه عدد اول هست یا مرکب؟ عددنما همین الان بررسیش می‌کنه! می‌خوای زوایای یه چندضلعی منتظم رو پیدا کنی؟ زاویه‌نما فوری برات حساب می‌کنه! نیاز داری بردارها رو تحلیل کنی؟ بردارنما همه چی رو برات ساده می‌کنه! با این ابزارها دیگه نیازی به محاسبات پیچیده نداری، فقط مقدار مورد نظرت رو وارد کن و جوابو سریع بگیر. امتحانش کن و ببین چقدر راحت‌تر می‌تونی مسائل ریاضی رو حل کنی! 
+                </p>
+                <a class="navbar-brand" href="DarsyarPage.html">رفتن به درس‌یار...</a>
+            </div>
+            <div class="col-12 col-md-6 justify-content-center d-flex m-0">
+                <img class="w-75 h-75" src="./imgs/abr-darsyar.webp" alt="تصویر ابر">
+            </div>
+        </div>
+    </div>
+
+    <div class="welcome-message" id="welcome-message">
+        <p>به سایت مزداهیک خوش آمدید✨</p>
+    </div>
+
+    <div class="footer row flex-row-reverse m-0">
+        <div class="page-footer col-12 col-md-3 col-lg-2 px-4">
+            <ul class="list-unstyled">
+                <li class="text-gray">صفحات</li>
+                <li><a href="./DarsyarPage.html">درس‌یار</a></li>
+                <li><a href="./Question-Page.html">بانک سوال</a></li>
+                <li><a href="./HomePage.html">صفحه اصلی</a></li>
+            </ul>
+        </div>
+        <div class="about-footer col-12 col-md-3 col-lg-3 px-4">
+            <ul class="list-unstyled">
+                <li class="text-gray">نشانی</li>
+                <li>مدرسه حضرت فاطمه</li>
+                <li>تماس:09134610630</li>
+                <li>ایدی شاد :@iSaba2011</li>
+                <li>ایمیل:sabakalantari2013@gmail.com</li>
+            </ul>
+        </div>
+        <div class="text-footer col-12 col-md-4 col-lg-5">
+            <ul class="list-unstyled">
+                <li class="text-gray justify-text">
+                    در مزداهیک تلاش می‌کنیم تا شما را در یادگیری ریاضی پایه هشتم همراهی کنیم. با استفاده از ابزارهای کاربردی، مقالات آموزنده و آزمون‌های آنلاین، می‌توانید مسائل ریاضی را به راحتی حل کنید و با مفاهیم پیچیده آشنا شوید. همچنین با مطالعه مقالات، به تاریخچه ریاضیات و دستاوردهای بزرگ‌ترین ریاضیدانان دنیا پی خواهید برد.
+                    هدف ما ایجاد محیطی جذاب و حمایتی است که به شما کمک کند مهارت‌های ریاضی خود را تقویت کنید. با ابزارهای مدرن و منابع آموزشی متنوع، مسیر یادگیری شما سریع‌تر و راحت‌تر خواهد شد.      
+                </li>
+            </ul>
+        </div>
+        <div class="logo-footer col-12 col-md-2 col-lg-2 d-flex justify-content-center">
+            <img width="150px" height="150" src="./imgs/icon-kharazmi.png" alt="">
+        </div>
+    </div>
+
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/java.js"></script>
+    <script src="./bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script>  
+
+</body>

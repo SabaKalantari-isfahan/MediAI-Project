@@ -1,0 +1,910 @@
+$BgLight : #F8F9FA;
+$Light : #FFFFFF;
+$Green : #A0E747;
+$Blue : rgb(39 160 228);
+$Purple :#CD81FF;
+$BgDark : #333333;
+$Dark : #292929;
+$TextDark : #131313;
+$TextColor : #646464;
+$Gray : #ACACAC;
+$BgGray : #EEEEEE;
+$Red : #ff5252;
+$shadow : 1px 1px 3px rgba(0, 0, 0, 0.1), -1px -1px 3px rgba(0, 0, 0, 0.1);
+$radius : 1.25rem ;
+
+// <-------------------------------------------Fonts------------------------------------------->
+@font-face {
+    font-family: yekan;
+    src: url(../fonts/Yekan.ttf);
+}
+@font-face {
+    font-family: vazir-bold;
+    src: url(../fonts/Vazir-Bold.woff);
+}
+
+// <-------------------------------------------Scrolbar------------------------------------------->
+::-webkit-scrollbar {
+    width: 7px; 
+}
+::-webkit-scrollbar-track {
+    background: none; 
+}
+::-webkit-scrollbar-thumb {
+    background: $TextColor;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: $Green;  
+}
+
+// <-------------------------------------------Colors------------------------------------------->
+.active{
+    color: $Green !important;
+}
+.text-color{
+    color: $TextColor !important;
+}
+.text-gray{
+    color:$Gray !important;
+}
+.TextDark{
+    color:$BgDark !important;
+}
+
+
+// <-------------------------------------------Texts-Aling------------------------------------------->
+.justify-text{
+    text-align: justify;
+}
+
+
+// <-----------------------------------------------Line-------------------------------------------->
+.w-line{
+    width: 100%;
+}
+
+
+// <-------------------------------------------Header------------------------------------------->
+.HeadlineText{
+    font-family: vazir-bold !important;
+    color: $TextDark;
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+}
+.HeadlineText::before{
+    content: "";
+    position: absolute;
+    top: 70%;
+    bottom: 0;
+    right: 0;
+    z-index: -10;
+    margin: 0;
+    width: 100%;
+    border-top: 10px solid $Green;
+}
+
+.headline-logo{
+    width: 48px;
+    height: 48px;
+    margin-left: 8px;
+    background-color: $Green;
+    border-radius: $radius;
+    box-shadow: $shadow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    i{
+        color: $TextDark;
+    }
+}
+
+.font-bold{
+    font-weight: bold;
+}
+
+.headline-m{
+    margin-top: 6px;
+}
+
+
+// <-------------------------------------------All------------------------------------------->
+*{
+    font-family: yekan !important;
+    font-size: 17px;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("../imgs/bg-all.jpg");
+}
+::selection {
+    background-color: $Green;
+    color: $TextDark;
+}
+// <-------------------------------------------Navbar------------------------------------------->
+.navbar{
+    background-color: $Light;
+    border-radius: 5px;
+    margin: 0 auto;
+    border: 1px solid #ffffff1d;
+    box-shadow: $shadow;
+    .logo{
+        width: 60px;
+        height: 50px;
+    }
+    .icontextnavbar{
+        font-size: 40px;
+    }
+    a {
+        color: $BgDark;
+        font-size: medium;
+        &:hover {
+            color: $TextColor;
+            border-radius: 1rem;
+        }
+    }
+    .dropdown{
+        .dropdown-menu{
+            text-align: right;
+            border: 0 !important;
+            box-shadow: $shadow;
+            border-radius: $radius;
+        }
+        span{
+            font-size: 15px;
+        }
+    }
+
+
+
+    .offcanvas{
+        .offcanvas-title{
+            font-family: vazir-bold !important
+        }  
+        .offcanvas-header{
+            box-shadow: $shadow;
+        }
+        .offcanvas-body{
+            ul{
+                padding: 0 !important;
+                .active-bg-navbar{
+                    background-color: $Green !important;
+                }
+                li{
+                    height: 50px;
+                    margin: 15px 0 0 0 !important;
+                    padding: 0 !important;
+                    border-radius: $radius;
+                    background-color: $BgGray;
+                    box-shadow: $shadow;
+                    display: flex;
+                    align-items: center;
+                    a{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// <-------------------------------------------Home-Page------------------------------------------->
+
+.bg-nav{
+    background-color: $BgGray;
+    padding: 20px 40px 0 40px;
+    .navbar-home{
+        border-radius: $radius !important;
+    }
+}
+.bg-home-header{
+    position: relative;
+    background-image: url("../imgs/bg-header/header-home.PNG");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    @media (min-width: 320px) {
+        height: 1000px; /* یا یک ارتفاع خاص */
+    }
+    @media (min-width: 768px) {
+        height: 1030px; /* یا یک ارتفاع خاص */
+    }
+    @media (min-width: 1024px) {
+        height: 770px; /* یا یک ارتفاع خاص */
+    }
+    @media (min-width: 1440px) {
+        height: 770px; /* یا یک ارتفاع خاص */
+    }
+    a{
+        background-color: $Green;
+        border-radius: $radius;
+        display: inline-block;
+        box-shadow: $shadow;
+        padding: 8px 16px;
+    }
+
+    
+    .header-home {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        z-index: 2;
+        .text-header-home {
+            position: relative;
+            z-index: 2;
+            .box-typing{
+                height: 30px;
+            }
+        }
+
+    }
+
+    
+
+    .body-cloud {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        max-width: 50%;
+        .cloud-container {
+            position: absolute;
+            top: 40%;
+            left: 30%;
+            transform: translate(-50%, -50%);
+            animation: floatCloud 6s ease-in-out infinite;
+            z-index: -1;
+            .cloud {
+                width: 100% !important; // اندازه بزرگ‌تر شد
+                opacity: 0.9;
+            } 
+            .math-symbol {
+                position: absolute;
+                font-size: 40px;
+                font-weight: bold;
+                color: $Green;
+                animation: floatSymbols 4s linear infinite;
+            }
+            // انیمیشن حرکت ابر
+            @keyframes floatCloud {
+                0%, 100% { transform: translate(-50%, -50%) translateY(0); }
+                50% { transform: translate(-50%, -50%) translateY(-30px); }
+            }
+
+            // انیمیشن حرکت نمادهای ریاضی
+            @keyframes floatSymbols {
+                0% { transform: translateY(0); opacity: 1; }
+                100% { transform: translateY(-60px); opacity: 0; }
+            } 
+        }
+    }
+}
+
+.box-karbord{
+    background-color: $BgGray;
+    box-shadow: $shadow;
+    border-radius: $radius;
+}
+
+.tabs-home{
+    button{
+        background-color: transparent;
+        width: 120px;
+        padding: 0 7px;
+        margin: 0 10px !important;
+        border: 0;
+        border-bottom: 1px solid $Green;
+        color: $Green;
+        &:hover , &:focus{
+            color: $TextColor;
+            border-bottom: 1px solid $TextColor;
+        }
+    }
+    .pages-tab{
+        .img-tab{
+            img{
+                height: 150px;
+                width: 150px;
+                border-radius: 50%;
+                box-shadow: $shadow;
+                margin: 5px;
+                padding: 0px;
+            }
+        }
+    }
+}
+.baner-home{
+    box-shadow: $shadow;
+    border-radius: $radius;
+    h4{
+        font-weight: bold;
+    }
+    p{
+        line-height: 30px;
+    }
+    img{
+        border-radius: $radius;
+        width: 250px;
+    }
+    a{
+        border-radius: $radius;
+        box-shadow: $shadow;
+        padding: 8px 16px;
+    }
+}
+.baner-home-blog{
+    background-color: $BgGray;
+    a{
+        background-color: $Green;
+    }
+}
+.baner-home-test{
+    background-color: $Green;
+    a{
+        background-color: $BgGray;
+    }
+}
+.cards-blogs-home{
+    a{
+        background-color: $Green;
+        border-radius: $radius;
+        display: inline-block;
+        box-shadow: $shadow;
+        padding: 8px 16px;
+        height: 42px;
+    }
+    .box-scroll-blog{
+        .btn-scroll{
+            display: flex;
+            align-items: center;
+            button{
+                border-radius: 50%;
+                background-color: $Green;
+                border: 0;
+                color: $TextDark;
+                height: 50px;
+                width: 50px;
+                cursor: pointer;
+            }
+        }
+        .box-cards-blogs{
+            overflow-x: auto;
+            scrollbar-width: none;
+            .card-scroll-blog{
+                background-color: $Light;
+                width: 340px;
+                margin: 5px 0px 0px 15px;
+                border-radius: $radius;
+                box-shadow: $shadow;
+                img{
+                    width: 100%;
+                    height: 300px;
+                    border-radius: $radius;
+                }
+            }
+        }
+    }
+}
+.box-q-home{
+    border-radius: $radius;
+    box-shadow: $shadow;  
+    background-color: $Light;
+    cursor: pointer;
+    h5{
+        padding: 15px;
+    }
+    p{
+        padding: 0 20px 20px 20px;
+    }
+    .answer-q-home{
+        color: $TextColor;
+    }  
+}
+
+.box-darsyar-home{
+    a{
+        background-color: $Green;
+        border-radius: $radius;
+        box-shadow: $shadow;
+        padding: 8px 16px;
+    }
+}
+
+.welcome-message {
+    position: fixed;
+    bottom: 5px;
+    background-color: $Light;
+    border-radius: $radius;
+    box-shadow: $shadow;
+    margin: 40px 20px;
+    padding: 15px;    
+    right: -300px;
+    z-index: 1000;
+    transition: right 0.5s ease-in-out;
+
+    p {
+        margin: 0;
+    }
+
+    &.show-welcome-message {
+        right: 20px;
+    }
+}
+
+
+// <-------------------------------------------Darsyar-Page------------------------------------------->
+.box-darsyar{
+    background-color: $Green;
+    border-radius: $radius;
+    box-shadow: $shadow;
+}
+.input-box {
+    border-radius: $radius;
+    box-shadow: $shadow;
+    width: 100%;
+    background-color: $Light;
+    padding: 8px 16px;
+    border: 0;
+}
+.btn-axis {
+    width: 100%;
+    display: block;
+    background-color: $BgGray;
+    border-radius: $radius;
+    box-shadow: $shadow;
+    padding: 8px 16px;
+    border: 0;
+}
+.playground {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    height: 1000px;
+    margin: 20px auto;
+    background: $Light;
+    border-radius: $radius;
+    border: 2px solid $Gray;
+    display: grid;
+    grid-template-columns: repeat(40, 1fr);
+    grid-template-rows: repeat(40, 1fr);
+    background-size: 25px 25px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1) 1px, transparent 1px),
+                      linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+    
+    .axis-line {
+        position: absolute;
+        background: $Gray;
+    }
+
+    .x-axis {
+        width: 100%;
+        height: 2px;
+        top: 50%;
+    }
+
+    .y-axis {
+        height: 100%;
+        width: 2px;
+        left: 50%;
+    }
+
+    .box-axis{
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background: $Gray;
+        position: absolute;
+        transition: 0.3s;
+        transform: translate(-50%, -50%);
+    }                  
+}
+@media screen and (max-width: 768px) {
+    .playground {
+        height: 600px;
+    }
+
+    .HeadlineText {
+        font-size: 1.8em;
+    }
+}
+@media screen and (max-width: 480px) {
+    .playground {
+        height: 400px;
+    }
+}
+
+
+
+
+
+// <-------------------------------------------About-Page------------------------------------------->
+.About-Bg{
+    .img-personnel{
+        border-radius: 30px;
+        width: 300px;
+        height: 300px;
+        box-shadow: $shadow;
+        border: 2px dashed $TextColor;
+    }
+
+    .btn-tabs{
+        background-color: transparent;
+        width: 80px;
+        padding: 0 7px;
+        margin: 0 10px !important;
+        border: 0;
+        border-bottom: 1px solid $Green;
+        color: $Green;
+        &:hover , &:focus{
+            color: $TextColor;
+            border-bottom: 1px solid $TextColor;
+        }
+    }
+}
+
+
+.progress{
+    border-radius: 50px;
+    margin-bottom: 20px;
+    .progress-bar {
+        background-color: $Green;
+        border-radius: 50px;
+    }
+}
+.card-project{
+    // height: 460px;
+    border-radius: $radius;
+    background-color: $Light;
+    box-shadow: $shadow;
+    color: $TextColor;
+   img{
+        width: 100%;
+        height: 290px;
+        border-radius: $radius;
+    
+   }
+   h3{
+    color : $TextDark !important ;
+   }
+}
+
+
+
+
+
+// <-------------------------------------------Blogs-Page------------------------------------------->
+.head-blogs{
+    background-color: $BgGray;
+    width: 100%;
+    @media (min-width: 320px) {
+        height: 600px;
+    }
+    @media (min-width: 375px) {
+        height: 520px;
+    }
+    @media (min-width: 768px) {
+        height: 450px;
+    }
+    @media (min-width: 1024px) {
+        height: 400px;
+    }
+    .text-head-blogs{
+        a{
+            background-color: $Green;
+            border-radius: $radius;
+            display: inline-block;
+            box-shadow: $shadow;
+            padding: 8px 16px;
+        }
+    }
+}
+.card-blog{
+    background-color: $Light;
+    border-radius: $radius;
+    box-shadow: $shadow;
+    margin-top: 30px ;
+    padding: 15px;
+    .text-cards-blog{
+        p{
+            text-align: justify;
+        }
+    }
+    .btn-card-blog{
+        display: flex;
+        justify-content: end;
+        a{
+            background-color: $Green;
+            border-radius: $radius;
+            display: inline-block;
+            box-shadow: $shadow;
+            padding: 8px 16px;
+        }
+    }
+    img{
+        border-radius: $radius;
+        width: 100%;
+        height: 100%;
+    }
+    &:hover{
+        background-color: $BgLight;
+    }
+}
+
+
+// <-------------------------------------------Blog-Page------------------------------------------->
+.box-blog-math{
+    img{
+        border-radius: $radius;
+    }
+}
+
+// <-------------------------------------------Questions-Bank-Page------------------------------------------->
+.box-question-bank{
+    .box-question-timz{
+        border-radius: $radius;
+        box-shadow: $shadow;  
+        background-color: $Light;
+        display: none;
+        p{
+            padding: 15px;
+        }
+        .answer-timz{
+            display: none;
+            color: $TextColor;
+        }  
+    }
+    .dropdown{
+        a{
+            background-color: $Green;
+            border-radius: $radius;
+            box-shadow: $shadow;
+        }
+        .dropdown-Questino{
+            background-color: $Light;
+            border-radius: $radius;
+            box-shadow: $shadow;
+            display: none;
+            p{
+                &:hover , &:focus {
+                    background-color: $BgGray;
+                    border-radius: $radius;
+                }
+            }
+        }
+    }
+}
+
+// <-------------------------------------------Calculator-Page------------------------------------------>
+.box-calculator{
+    margin-top: 50px;
+    .calculator-container {
+        width: 300px;
+        background-color: $Light;
+        border-radius: $radius;
+        box-shadow: $shadow;
+        padding: 20px;
+        text-align: center;
+        .calculator-display {
+            width: 100%;
+            height: 50px;
+            background: $BgDark;
+            color: $Light;
+            text-align: right;
+            padding: 10px;
+            font-size: 1.5em;
+            border-radius: $radius;
+            margin-bottom: 10px;
+        }
+        .calculator-buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 5px;
+            button {
+                padding: 15px;
+                font-size: 1.2em;
+                border: none;
+                cursor: pointer;
+                border-radius: 5px;
+            }
+            .btn-scientific { background: $Gray; color: $TextDark; }
+            .btn-number { background: $BgLight; }
+            .btn-operator { background: $Green; color: $TextDark; }
+            .btn-equal { background: $Green; color: $TextDark; }
+            .btn-clear { background: $Red; color: $Light#FFFFFF; }
+        }
+    }
+}
+
+
+// <-------------------------------------------Test-Login-Page------------------------------------------>
+.box-test-login{
+    width: 90%;
+    background-color: $Light;
+    border-radius: $radius;
+    box-shadow: $shadow;
+    a{
+        background-color: $Green;
+        border-radius: $radius;
+        box-shadow: $shadow;
+        padding: 8px 16px;
+    }
+}
+
+// <-------------------------------------------Test-Page------------------------------------------>
+.box-test{
+    margin: 0 10px;
+    border-radius: $radius;
+    box-shadow: $shadow;
+    background-color: $Light;
+    .answers-puiz{
+        div{
+            justify-content: center;
+        }
+    }
+}
+#submitBtn{
+    border: 0;
+    background-color: $Green;
+    border-radius: $radius;
+    box-shadow: $shadow;
+    padding: 8px 16px;
+    margin: 0 10px;
+    width: 98%;
+    
+}
+.timer-box{
+    background-color: $Light;
+    border-radius: $radius;
+    box-shadow: $shadow;
+    margin: 40px 20px;
+    padding: 5px 15px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+// <-------------------------------------------Math-Eight-Page------------------------------------------>
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    .modal-content {
+        background-color: $BgLight;
+        box-shadow: $shadow;
+        border: 0 !important;
+        margin: 100px auto;
+        width: 80%;
+        max-width: 500px;
+        border-radius: $radius;
+        max-height: 70vh;
+        overflow-y: auto;
+        .close {
+            color: $Gray;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+      }
+}
+.math-eight{
+    a{
+        background-color: $Green;
+        border-radius: $radius;
+        display: inline-block;
+        box-shadow: $shadow;
+        padding: 8px 16px;
+        height: 42px;
+    }
+    .box-cards-eight-math{
+        .col-12{
+            justify-content: center;
+            display: flex;
+            .card-eight-math{
+                background-color: $Light;
+                border-radius: $radius;
+                box-shadow: $shadow;
+                padding: 7px;
+                width: 300px;
+                img{
+                    width: 100%;
+                    border-radius: $radius;
+                }
+                button{
+                    width: 100%;
+                    background-color: $Green;
+                    border-radius: $radius;
+                    border: 0;
+                    box-shadow: $shadow;
+                    padding: 8px 16px;
+                }
+            }
+        }
+    }
+}
+  
+
+
+
+
+// <-------------------------------------------Footer------------------------------------------->
+.footer{
+    background-position: right;
+    margin-top: 7% !important;
+    width: 100%;
+    padding: 40px 0px;
+    li{
+        padding-bottom: 15px;
+        color: white;
+    }
+    a{
+        color: white;
+    }
+
+    @media (min-width: 320px) {
+        background-image: url("../imgs/bg-footers/footer-bg-sm.PNG");
+        height: 1350px;
+        .page-footer{
+            margin-top: 100px;
+        }
+    }
+    @media (min-width: 768px) {
+        background-image: url("../imgs/bg-footers/footerMd.PNG");
+        height: 550px;
+        .page-footer{
+            margin-top: 70px;
+        }
+        .about-footer{
+            margin-top: 70px;
+        }
+        .text-footer{
+            margin-top: 70px;
+        }
+        .logo-footer{
+            margin-top: 70px;
+        }
+    }
+    @media (min-width: 1024px) {
+        background-image: url("../imgs/bg-footers/footer-1024.PNG");
+        background-repeat: no-repeat;
+        background-size: cover;
+        .page-footer{
+            margin-top:130px;
+        }
+        .about-footer{
+            margin-top: 130px;
+        }
+        .text-footer{
+            margin-top: 130px;
+        }
+        .logo-footer{
+            margin-top: 130px;
+        }
+    }
+    @media (min-width: 1440px) {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url("../imgs/bg-footers/lg-footer-new.png");
+        .page-footer{
+            margin-top: 180px;
+        }
+        .about-footer{
+            margin-top: 180px;
+        }
+        .text-footer{
+            margin-top: 180px;
+        }
+        .logo-footer{
+            margin-top: 180px;
+        }
+    }
+    
+}
+
